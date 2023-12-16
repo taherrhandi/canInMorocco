@@ -9,6 +9,7 @@ export class ProgramComponent {
   secIds = [
     { id: 'program#sec1', title: 'CPES 2024 Topics' },
     { id: 'program#sec2', title: 'Plenary Talks' },
+    { id: 'program#sec3', title: 'CAN 2025 final draw' },
   ];
 
   matchs =[

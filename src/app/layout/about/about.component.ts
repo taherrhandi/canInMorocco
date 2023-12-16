@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   secIds = [
-    { id: 'about#sec1', title: 'About CPES 2024' },
-    { id: 'about#sec2', title: 'About IFAC' },
+    { id: 'about#sec1', title: 'About CIM25' },
+    { id: 'about#sec2', title: 'About CAN25' },
     { id: 'about#sec6', title: 'Honorary Commitee' },
     { id: 'about#sec3', title: 'National Organizing Committee' },
     { id: 'about#sec4', title: 'International Program Committee' },
@@ -17,20 +17,20 @@ export class AboutComponent {
   breadCrumbLinkNames: string[] = ['home', 'about'];
 
   contacts = [
-    { name: 'CPES', email: 'cpes2024@unicaen.fr' },
+    { name: 'CIM25', email: 'cim25@cim25.ma' },
   ];
   honoraryCommitee = [
     {
-      name: 'El Bacha Farid',
-      university: "Interim President, Mohammed V University, Rabat Morocco"
+      name: 'Mohammed VI',
+      university: "King of Morocco"
     },
     {
-      name: 'Belfkih Samir ',
-      university: " Director, ENSAM Rabat"
+      name: 'Patrice Motsepe ',
+      university: " President of the African Football Confederation"
     },
     {
-      name: 'El Alami Jamila',
-      university: " Director, CNRST, Rabat Morocco"
+      name: 'Gianni Infantino',
+      university: " President of FIFA"
     },
   ]
 

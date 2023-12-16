@@ -68,4 +68,9 @@ li{
   table th:last-child {
     border-right: none;
   }
+  img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   

@@ -16,48 +16,48 @@ type Timer = ReturnType<typeof setInterval>;
 })
 export class ImportantDatesComponent implements AfterViewInit, OnDestroy {
   cardData: CardData[] = [
-    { info: 'Date 1', monthDay: 'Juin 20th', year: 2025 },
+    { info: 'Start date (Ceremony)', monthDay: 'March 21st', year: 2024 },
     {
-      info: 'Date 2',
-      monthDay: 'Juin 21th',
+      info: 'First Match',
+      monthDay: 'March 21st',
       year: 2024,
     },
     {
-      info: 'Date 2',
-      monthDay: 'January 5th',
+      info: 'Quarterfinal',
+      monthDay: 'April 01st',
       year: 2024,
     },
     {
-      info: 'Invited session proposal',
-      monthDay: 'January 10th',
-      year: 2024,
-    },
-    // {
-    //   info: 'Contributed discussion paper',
-    //   monthDay: 'January 20th',
-    //   year: 2024,
-    // },
-    {
-      info: 'Invited session paper',
-      monthDay: 'January 20th',
+      info: 'Semi Final',
+      monthDay: 'April 06th',
       year: 2024,
     },
     {
-      info: 'Invited session tutorial paper',
-      monthDay: 'January 20th',
+      info: 'Match for 3rd place',
+      monthDay: 'April 10th',
+      year: 2024,
+    },
+    {
+      info: 'Final',
+      monthDay: 'April 11th',
       year: 2024,
     },
     // {
-    //   info: 'Invited session discussion paper',
+    //   info: 'Invited session tutorial paper',
     //   monthDay: 'January 20th',
     //   year: 2024,
     // },
-    { info: 'Invited open track paper', monthDay: 'January 20th', year: 2024 },
-    {
-      info: 'Invited open track tutorial paper',
-      monthDay: 'January 20th',
-      year: 2024,
-    },
+    // // {
+    // //   info: 'Invited session discussion paper',
+    // //   monthDay: 'January 20th',
+    // //   year: 2024,
+    // // },
+    // { info: 'Invited open track paper', monthDay: 'January 20th', year: 2024 },
+    // {
+    //   info: 'Invited open track tutorial paper',
+    //   monthDay: 'January 20th',
+    //   year: 2024,
+    // },
     // {
     //   info: 'Ivited open track discussion paper',
     //   monthDay: 'January 20th',

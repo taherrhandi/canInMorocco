@@ -1,77 +1,94 @@
-<app-scaffold [sectionsInfo]="secIds" [breadCrumbLinkNames]="breadCrumbLinkNames" [title]="'Registration'"
+<app-scaffold [sectionsInfo]="secIds" [breadCrumbLinkNames]="breadCrumbLinkNames" [title]="'Resevation'"
   [headerBackgroundImage]="'../../assets/head/reg.jpg'">
   <div id="sec1">
-    <h1>{{secIds[0].title}} (IN US Dollars)</h1>
-    <h2>Registration fees for final paper registration</h2>
-    <p>providing full access to conference sessions, documents, meals, coffees, touristic program
-    </p>
+    <h1>{{secIds[0].title}} (IN MAD)</h1>
+    <h2>Reservation fees for final match</h2>
+    <!-- <p>providing full access to conference sessions, documents, meals, coffees, touristic program -->
+    <!-- </p> -->
     <table>
       <thead>
         <tr>
           <th></th>
-          <th>registration fees <br> <span>must be completed before April 25, 2024</span></th>
-          <th>registration details</th>
+          <th>reservation fees <br> <span>must be completed before April 11, 2024</span></th>
+          <!-- <th>reservation details</th> -->
         </tr>
       </thead>
       <tbody>
         <tr>
           <th>Regular</th>
-          <td>450 USD</td>
-          <td>
+          <td>450 MAD</td>
+          <!-- <td>
             <ul>
               <li>Max 2 papers can be uploaded.</li>
-              <li>Extra 100 USD per additional paper.</li>
-              <li>Extra 60 USD per additional page.</li>
+              <li>Extra 100 MAD per additional paper.</li>
+              <li>Extra 60 MAD per additional page.</li>
             </ul>
-          </td>
+          </td> -->
         </tr>
         <tr>
           <th>Student</th>
-          <td>250 USD</td>
-          <td>
+          <td>250 MAD</td>
+          <!-- <td>
             <ul>
               <li>Max 2 papers can be uploaded.</li>
-              <li>Extra 100 USD per additional paper.</li>
-              <li>Extra 60 USD per additional page.</li>
+              <li>Extra 100 MAD per additional paper.</li>
+              <li>Extra 60 MAD per additional page.</li>
             </ul>
-          </td>
+          </td> -->
         </tr>
       </tbody>
     </table>
-    <h2>Registration fees not for final paper registration</h2>
+    <h2>reservation fees for Semi final</h2>
     <table>
       <thead>
         <tr>
           <th></th>
-          <th>early registration fees<br> <span>must be completed before April 25, 2024</span></th>
-          <th>Late registration fees <br><span>after April 25, 2024</span></th>
+          <th>early reservation fees<br> <span>must be completed before April 01, 2024</span></th>
+          <th>Late reservation fees <br><span>after April 01, 2024</span></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th>Regular</th>
-          <td>250 USD</td>
-          <td>350 USD</td>
+          <td>250 MAD</td>
+          <td>350 MAD</td>
         </tr>
         <tr>
           <th>Student</th>
-          <td>150 USD</td>
-          <td>250 USD</td>
+          <td>150 MAD</td>
+          <td>250 MAD</td>
         </tr>
       </tbody>
     </table>
-    <h2>Registration fees for Accompanying Person</h2>
+    <h2>reservation fees for Quarterfinal</h2>
     <table>
       <thead>
         <tr>
-          <th>early registration fees<br> <span>must be completed before April 25, 2024</span></th>
-          <th>Late registration fees <br><span> after April 25, 2024</span></th>
+          <th>early reservation fees<br> <span>must be completed before March 21, 2024</span></th>
+          <th>Late reservation fees <br><span> after March 21, 2024</span></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>150 USD</td>
-          <td>200 USD</td>
+          <td>150 MAD</td>
+          <td>200 MAD</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <h2>reservation fees for group matchs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>early reservation fees<br> <span>must be completed before March 11, 2024</span></th>
+          <th>Late reservation fees <br><span> after March 11, 2024</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>100 MAD</td>
+          <td>80 MAD</td>
         </tr>
       </tbody>
     </table>
@@ -80,11 +97,11 @@
   <div id="sec2">
     <h1>{{secIds[1].title}}</h1>
     <ol>
-      <li>Payment must be made in US Dollars</li>
+      <li>Payment must be made in Moroccan  Dirhams</li>
       <li>The only accepted means of payment are:
         <ol>
-          <li>By CREDIT CARD (Visa, MasterCard, JCB, American Express, Diners Club).</li>
-          <li>Bank Wire Transfer</li>
+          <li>By CREDIT CARD (Visa, MasterCard).</li>
+          <li>CashPlus, WafaCash, Western Union </li>
         </ol>
       </li>
     </ol>
@@ -92,14 +109,14 @@
 
   <div id="sec3">
     <h1>{{secIds[2].title}}</h1>
-    <h2>1. Registration using Credit Card</h2>
-    <p>This registration procedure is handled by IFAC Papercept. </p>
-    <p>For registration and payment please press the button:</p>
+    <h2>1. reservation using Credit Card</h2>
+    <p>This reservation procedure is handled by CIM25 Papercept. </p>
+    <p>For reservation and payment please press the button:</p>
      <!-- <a href="https://ifac.papercept.net/conferences/scripts/start.pl">register now</a> -->
-     <a href="javascript:void()" onclick="alert('Registration not yet open')">register now</a>
-    <h2>2.Registration using wire transfer</h2>
+     <a href="javascript:void()" onclick="alert('reservation not yet open')">register now</a>
+    <h2>2.reservation using wire transfer</h2>
     <p>Alternatively, participants can use the wire transfer option.</p>
-    <p>1.The information needed to complete registration this way will be provided later.</p>
+    <p>1.The information needed to complete reservation this way will be provided later.</p>
   </div>
 
   <div id="sec4">
@@ -108,7 +125,7 @@
       All fees paid are not refundable.
     </p>
   </div>
-  <div id="sec5">
+  <!-- <div id="sec5">
     <h1>{{secIds[4].title}}</h1>
     <p>
       The CPES 2024 National Organizing Committee reserves the right to cancel
@@ -166,14 +183,14 @@
         registrants.</li>
       <li>Sharing information with the organizations and companies involved in the International Federation of
         Automatic Control 2023, for the preparation and operations.</li>
-      <p>Please agree to the Privacy Policy and click the button below to proceed with your registration.</p>
+      <p>Please agree to the Privacy Policy and click the button below to proceed with your reservation.</p>
     </ul>
 
-  </div>
+  </div> -->
   <div id="sec7">
-    <h1>{{secIds[6].title}}</h1>
-    <p>CPES 2024 Secretariat </p>
-    <p>E-mail: cpes2024@unicaen.fr</p>
-    <p> Office Hours: 9:30-17:00 UTC (weekdays only)</p>
+    <h1>{{secIds[4].title}}</h1>
+    <p>CIM25 Secretariat </p>
+    <p>E-mail: 	cim25@cim25.ma</p>
+    <!-- <p> Office Hours: 9:30-17:00 UTC (weekdays only)</p> -->
   </div>
 </app-scaffold>
