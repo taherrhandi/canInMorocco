@@ -66,12 +66,13 @@
     cursor: pointer;
     position: relative;
     padding: 0 25px;
+
+    width: 170px;
 }
 
 .grid-item>img {
     width: 150px;
     position:absolute;
-    right: -100%;
 }
 .logo-img{
     width: 150px;

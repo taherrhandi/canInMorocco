@@ -27,4 +27,5 @@ export class TravelToursComponent {
   showContent(content: string) {
     this.selectedContent = content;
   }
+
 }

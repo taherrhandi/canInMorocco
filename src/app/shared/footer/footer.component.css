@@ -2,6 +2,10 @@
     background-color: #f0f0f0;
     padding: 36px 0;
     text-align: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .footer-container {
@@ -51,6 +55,12 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     padding-inline: 26px 36px;
+
+
+  }
+  .sub-footer>.social-media{
+    margin-left: 15px;
+    margin-top: 10px;
   }
   
   .social-media {
@@ -62,7 +72,7 @@ a:hover{
   
   .social {
     border-radius: 50%;
-    background-color: #0a74b9;
+    background-color: #0ab930;
     color: #f0f0f0;
     border: 2px solid transparent;
     padding: 8px;

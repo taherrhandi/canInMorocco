@@ -13,10 +13,13 @@ export class MainComponent implements AfterViewInit{
 
   url = environment.baseUrl+"#date"
 
+  images = ['1.avif','back2.jpeg']
+
   ngAfterViewInit(): void {
     interval(5000)
     .subscribe(()=>{
-      this.container.nativeElement.style.backgroundImage = `url('../../../../assets/img/home/${this.counter}.jpg')`;
+      this.container.nativeElement.style.backgroundImage = `url('../../../../assets/img/home/${this.images[this.counter]}')`;
+      // this.container.nativeElement.style.backgroundImage = `url('../../../../assets/img/home/${this.counter}.jpg')`;
       this.container.nativeElement.style.opacity = "0";
       this.counter < 10 ? this.counter = this.counter + 1 : this.counter = 1;
       this.container.nativeElement.style.opacity = "1";

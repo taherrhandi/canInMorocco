@@ -70,6 +70,7 @@
   font-size: 45px;
   text-transform: uppercase;
   color: #fff;
+  transform: translateX(120px);
 }
 
 .breadcrumb {
