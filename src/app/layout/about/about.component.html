@@ -1,0 +1,118 @@
+<app-scaffold [sectionsInfo]="secIds" [title]="'About'" [headerBackgroundImage]="'../../assets/head/about.jpg'">
+    <div id="sec1">
+      <h1>{{secIds[0].title}}</h1>
+      <p>In IFAC, CPES Symposium is a three-year periodic event rooted in a long-standing series originated in Munich,
+        Germany (1992) and continued in Cancun, Mexico (1995), Beijing, China (1997), Brussels, Belgium (2000), Seoul,
+        Korea (2003), Kananaskis/Alberta, Canada (2006), Tempere, Finland (2009), Toulouse, France (2012), New Delhi,
+        India (2015), Tokyo, Japan (2018), Moscow, Russia (2021).
+        It turns out that CPES 2024, in Rabat-Morocco, is going to be CPES’s first time in Africa.
+        CPES addresses all aspects of modeling, operation, and control of power and energy systems, including dynamic
+        interactions between energy sources and power systems, constraint and security control aspects, tools and methods
+        for control system design, test and documentation, real-time simulation and dispatching. Development and
+        application of tools and methods such as modern control theory, artificial intelligence techniques, and
+        data-driven modeling and control are also important.
+        Recent increases in demand, production costs, and environmental concerns have triggered the efforts to develop
+        Smart Grids for power systems. Control, information and communications technologies are at the core of the Smart
+        Grid vision as they will empower today’s power grid with the capability of supporting distributed two-way
+        energy and information flow, isolating and restoring power outages more quickly, facilitating the integration of
+        renewable energy sources and empowering the consumer with tools for optimizing their energy consumption.
+        CPES 2024 will focus on the emerging fields like optimal control and management of small and large decentralized
+        units based on renewable resources such as hydro, wind, solar and biomass, energy storage systems, the concepts of
+        smart grid, wide-area monitoring and control, virtual power plant, intelligent control in energy
+        systems, energy internet and design of energy markets.
+        Following the tradition, the IFAC TC 6.3 is planning to organize the Symposium with a number of Invited Sessions &
+        Open Invited Tracks, which are centered on all aspects that are relevant to Power and Energy Systems Control and
+        aim at bringing together researchers from Academia, Industry, and National Labs to exchange novel ideas, explore
+        enabling technologies, discuss innovative designs, and share field trial experiences and lessons learnt.
+      </p>
+    </div>
+  
+    <div id="sec2">
+      <h1>{{secIds[1].title}}</h1>
+      <P>Automatic control is the technology not only for controlling devices, but also for designing and operating the
+        systems for solving societal problems such as aging, health, energy, environment, food, security, disasters, and
+        pandemic, as well as for creating societal values for sustainable developments in the future.
+  
+        For more than 60 years, IFAC has made various professional technical activities from theory and technology to
+        applications and societal challenge related to automatic control. IFAC has provided diverse people with various
+        services and opportunities to participate in the various technical events and to present and publish papers, etc.
+  
+        IFAC’s official members are National Member Organizations which represent countries. But individuals can become
+        “affiliates”, which are personal members in IFAC. You can benefit from all IFAC services.
+  
+        Solidarity and cooperation are important and essential to tackle societal issues. I would like to promote the
+        activities to construct an arena for cooperation by exploring and exploiting digital transformation in IFAC.
+      </P>
+  
+    </div>
+    
+    <div id="sec6">
+      <h1>Honorary Commitee</h1>
+      <table>
+        <tbody>
+          <tr *ngFor="let item of  honoraryCommitee">
+            <td>{{item.name}}</td>
+            <td>{{item.university}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <div id="sec3">
+      <h1>{{secIds[3].title}}</h1>
+  
+      <table>
+        <tbody>
+          <tr *ngFor="let item of  nationalOrganizers">
+            <td>{{item.role}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.university}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    
+    <div id="sec4">
+      <h1>{{secIds[4].title}} (IPC)</h1>
+  
+      <div style="margin-bottom: 40px;">
+        <!-- <h1>{{secIds[6].title}}</h1> -->
+        <table >
+          <tbody>
+            <tr *ngFor="let item of  ipc">
+              <td>{{item.role}}</td>
+              <td>{{item.name}}</td>
+              <td>{{item.university}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+  
+      <h2>IPC Members</h2>
+      <table>
+        <tbody>
+          <tr *ngFor="let organizer of internationalOrganizers;">
+              <td>{{ organizer.FirstName }}</td>
+              <td>{{ organizer.LastName }}</td>
+              <td class="country">{{ organizer.Country }}</td>
+            </tr>
+        </tbody>
+      </table>
+  
+    </div>
+    <div id="sec5">
+      <h1>{{secIds[5].title}}</h1>
+      <table>
+        <tbody>
+          <tr *ngFor="let contact of contacts " >
+            <td>{{contact.name}}</td>
+            <td>{{contact.email}}</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </app-scaffold>
+  

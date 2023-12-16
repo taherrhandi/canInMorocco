@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font-family: var(--f-base);
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color: #eeeeee;
+    --clr-bg: #f2f2f0;
+    --clr-pri-1: #b6d0f2;
+    --clr-pri-2: #5cf293;
+    --clr-pri-3: #3df246;
+    --clr-pri-4: #25d958;
+    --clr-pri-5: #31732f;
+    --clr-pri-6: #038c15;
+    --clr-pri-drk: #006e14;
+    --clr-sec-1: #1e5916;
+    --clr-sec-2: #60A672;
+    --clr-ter-1: #F2CD5C;
+    --clr-ter-2: #F2D98D;
+    --clr-ter-3: #aa5f33;
+    --clr-ter-4: #F2F2F0;
+    --f-base: 'Roboto', sans-serif;
+    --f-base-1: 'Raleway', sans-serif;
+    --f-bold: 'Montserrat', sans-serif;
+    --f-bold-1: 'Ubuntu', sans-serif;
+    --f-bold-spec: 'Russo One', sans-serif;
+    --f-light: 'Poiret One', cursive;
+}
+
+body {
+    background-color: var(--clr-bg);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+p,li{
+  line-height: 2;
+}
+.toBeDone{
+    color: rgb(77, 75, 75);
+    text-transform: capitalize;
+
+}

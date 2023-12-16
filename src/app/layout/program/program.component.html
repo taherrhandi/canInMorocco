@@ -1,0 +1,31 @@
+<app-scaffold [sectionsInfo]="secIds" [breadCrumbLinkNames]="breadCrumbLinkNames" [title]="'Program'" [headerBackgroundImage]="'/assets/img/home/program2.jpg'">
+    <div id="sec1">
+      <h1>{{secIds[0].title}}</h1>
+      <h2>matchs </h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>team 1</th>
+            <th>team 2</th>
+            <th>stadium</th>
+            <th>time</th>
+            <th>status</th>
+            <th>result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let match of matchs">
+            <th>{{match.team1}}</th>
+            <th>{{match.team2}}</th>
+            <th>{{match.stadium}}</th>
+            <th>{{match.time}}</th>
+            <th>{{match.status}}</th>
+            <th>{{match.result}}</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+  </app-scaffold>
+  

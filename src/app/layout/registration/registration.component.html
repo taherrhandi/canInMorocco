@@ -1,0 +1,179 @@
+<app-scaffold [sectionsInfo]="secIds" [breadCrumbLinkNames]="breadCrumbLinkNames" [title]="'Registration'"
+  [headerBackgroundImage]="'../../assets/head/reg.jpg'">
+  <div id="sec1">
+    <h1>{{secIds[0].title}} (IN US Dollars)</h1>
+    <h2>Registration fees for final paper registration</h2>
+    <p>providing full access to conference sessions, documents, meals, coffees, touristic program
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>registration fees <br> <span>must be completed before April 25, 2024</span></th>
+          <th>registration details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Regular</th>
+          <td>450 USD</td>
+          <td>
+            <ul>
+              <li>Max 2 papers can be uploaded.</li>
+              <li>Extra 100 USD per additional paper.</li>
+              <li>Extra 60 USD per additional page.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>Student</th>
+          <td>250 USD</td>
+          <td>
+            <ul>
+              <li>Max 2 papers can be uploaded.</li>
+              <li>Extra 100 USD per additional paper.</li>
+              <li>Extra 60 USD per additional page.</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Registration fees not for final paper registration</h2>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>early registration fees<br> <span>must be completed before April 25, 2024</span></th>
+          <th>Late registration fees <br><span>after April 25, 2024</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Regular</th>
+          <td>250 USD</td>
+          <td>350 USD</td>
+        </tr>
+        <tr>
+          <th>Student</th>
+          <td>150 USD</td>
+          <td>250 USD</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Registration fees for Accompanying Person</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>early registration fees<br> <span>must be completed before April 25, 2024</span></th>
+          <th>Late registration fees <br><span> after April 25, 2024</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>150 USD</td>
+          <td>200 USD</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="sec2">
+    <h1>{{secIds[1].title}}</h1>
+    <ol>
+      <li>Payment must be made in US Dollars</li>
+      <li>The only accepted means of payment are:
+        <ol>
+          <li>By CREDIT CARD (Visa, MasterCard, JCB, American Express, Diners Club).</li>
+          <li>Bank Wire Transfer</li>
+        </ol>
+      </li>
+    </ol>
+  </div>
+
+  <div id="sec3">
+    <h1>{{secIds[2].title}}</h1>
+    <h2>1. Registration using Credit Card</h2>
+    <p>This registration procedure is handled by IFAC Papercept. </p>
+    <p>For registration and payment please press the button:</p>
+     <!-- <a href="https://ifac.papercept.net/conferences/scripts/start.pl">register now</a> -->
+     <a href="javascript:void()" onclick="alert('Registration not yet open')">register now</a>
+    <h2>2.Registration using wire transfer</h2>
+    <p>Alternatively, participants can use the wire transfer option.</p>
+    <p>1.The information needed to complete registration this way will be provided later.</p>
+  </div>
+
+  <div id="sec4">
+    <h1>{{secIds[3].title}}</h1>
+    <p>
+      All fees paid are not refundable.
+    </p>
+  </div>
+  <div id="sec5">
+    <h1>{{secIds[4].title}}</h1>
+    <p>
+      The CPES 2024 National Organizing Committee reserves the right to cancel
+      CPES 2024 without notice or compensation in the event of any delay, default,
+      failure or cancelation of implementation of any deliverable to or for
+      the CPES 2024 which has been caused, directly or indirectly, by any incident of
+      “force majeure”. For the purposes hereof, the term “force majeure” shall mean any incident,
+      circumstance or cause which renders delivery of the CPES 2024 substantially or totally
+      impossible or impracticable and which is beyond the control of the CPES 2024 National Organizing Committee.
+      The term shall include but not be limited to the following:
+
+    </p>
+    <ul>
+      <li>Any strike, or other industrial action of any kind;</li>
+      <li>Fire, flood, or adverse weather conditions;</li>
+      <li>Unavoidable breakdown or destruction of facilities or equipment;</li>
+      <li>Failure of carriers, delays in performance or delivery by sub-contractors or any other breach by a third
+        party of a material obligation towards the CPES 2024 National Organizing Committee;</li>
+      <li>Power failure;</li>
+      <li>Promulgation/amendment/rescission of any relevant legislation or regulation by local or national government;
+      </li>
+      <li> Any occurrence of any nature which renders it reasonably necessary for the CPES 2024 National Organizing
+        Committee to cancel the CPES 2024.
+
+      </li>
+    </ul>
+    <p>In such circumstances, the CPES 2024 National Organizing Committee and the CPES 2024 organizers are hereby
+      indemnified and shall not be liable to any delegate, supplier or other service provider for any loss or damage
+      save that the CPES 2024 National Organizing Committee shall only be liable to reimburse the relevant party such
+      amounts as may actually have been received by the CPES 2024 National Organizing Committee BUT AFTER deduction of
+      any costs that have been reasonably incurred by it up to the point of cancelation in preparing the Congress. This
+      limited liability does not extend to any payments that may have been made directly or indirectly (on behalf of
+      delegates/attendees/service providers, etc.) to third parties such as hotels or airlines.</p>
+    <p>The IFAC 2023 National Organizing Committee and the CPES 2024 organizers shall not be responsible for any theft,
+      breakage, destruction or damages of any kind whatsoever and howsoever caused to personal and/or business items of
+      delegates, accompanying persons, children, or other attendees.</p>
+    <p>All delegates are to make themselves fully aware of the health and visa requirements in respect of travel to
+      Japan; in the event that an individual is unable to participate in the Congress due to not meeting these
+      requirements in any way, neither the CPES 2024 National Organizing Committee nor the CPES 2024 organizers accept
+      responsibility in any respect.
+    </p>
+
+  </div>
+  <div id="sec6">
+    <h1>{{secIds[5].title}}</h1>
+    <p>We, the CPES 2024 National Organizing Committee, are committed to respecting and securing your personal
+      information submitted. The Committee shall adopt reasonable safety measures in an effort to prevent illegal
+      access, loss, alteration or leaks of personal information collected.
+      We will only use your personal information for the following purposes.
+    </p>
+    <ul>
+      <li>Providing information on the International Federation of Automatic Control 2024, and other future related
+        Conventions.</li>
+      <li>Operating and managing the International Federation of Automatic Control 2024, responding to inquiries from
+        registrants.</li>
+      <li>Sharing information with the organizations and companies involved in the International Federation of
+        Automatic Control 2023, for the preparation and operations.</li>
+      <p>Please agree to the Privacy Policy and click the button below to proceed with your registration.</p>
+    </ul>
+
+  </div>
+  <div id="sec7">
+    <h1>{{secIds[6].title}}</h1>
+    <p>CPES 2024 Secretariat </p>
+    <p>E-mail: cpes2024@unicaen.fr</p>
+    <p> Office Hours: 9:30-17:00 UTC (weekdays only)</p>
+  </div>
+</app-scaffold>

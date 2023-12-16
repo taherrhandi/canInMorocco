@@ -1,0 +1,145 @@
+.imp-dates-cont {
+    background: url('/assets/bg_world-map.svg') no-repeat;
+    overflow: hidden;
+}
+
+.app-header {
+    margin-block-end: 3em;
+}
+
+.flex-cont {
+    position: relative;
+}
+
+.flex-cont::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fafffb;
+    top: 5px;
+}
+
+.flex {
+    width: 45000px;
+    /* overflow: hidden; */
+    display: flex;
+    gap: 1.7em;
+    transition: transform 500ms cubic-bezier(.59, .89, .39, 1.2);
+    z-index: 2;
+}
+
+
+.teletubby {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.antenae {
+    width: 1px;
+    height: 50px;
+    background-color: var(--clr-pri-4);
+    position: relative;
+}
+
+.antenae::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--clr-pri-6);
+    width: 14px;
+    height: 14px;
+    top: 0;
+    left: -6px;
+}
+
+.card {
+    display: inline-block;
+    padding: 1.875em;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: rgb(135 135 135 / 16%) 0px 1px 4px, rgb(33 82 107 / 32%) 0px -4px 0px 0px inset;
+}
+
+.card>p {
+    width: 20ch;
+    min-height: 168px;
+    font-size: 1.25em;
+    list-style: 1.4;
+    max-height: 164px;
+    overflow: hidden;
+}
+
+.card hr {
+    margin-block: 1em;
+    border: 1px solid #f2f5f7;
+}
+
+.card .date-area {
+    width: max-content;
+    margin-inline-start: auto;
+    color: #666;
+    font-weight: lighter;
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.circle.current {
+    background-color: var(--clr-pri-6);
+}
+
+.slider-ctrl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding-block: 3em;
+    user-select: none;
+}
+
+.ctrl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--clr-pri-6);
+    border-radius: 50%;
+    padding: 1em;
+    width: 13px;
+    height: 13px;
+    display: grid;
+    place-content: center;
+    color: var(--clr-pri-6);
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.ctrl:hover {
+    background-color: var(--clr-pri-6);
+    color: #fff;
+}
+
+.ctrl > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    font-size: 21px;
+}
+
+.circ-cont {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}

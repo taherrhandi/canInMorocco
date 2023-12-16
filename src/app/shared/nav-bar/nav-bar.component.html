@@ -1,0 +1,161 @@
+<div class="head-menu">
+  <img class="logo-img" src="../../../../assets/logo/logo-can2010.png" alt="logo" width="150px">
+  <span (click)="menuAction()"><i class="ri-menu-line"></i></span>
+</div>
+
+<div class="container-header">
+    <div class="flex-conatiner">
+        <div class="flex-item"><img src="../../../../assets/logo/caf-logo.png" alt="ifac logo" width="40px"></div>
+        <!-- <div class="grid-item center">Deadline extension: final paper submission until Apr. 7, 2024</div> -->
+        <div class="flex-item">
+            <span><i class="ri-facebook-fill"></i></span>
+            <span><i class="ri-twitter-line"></i></span>
+            <span><i class="ri-chat-1-line"></i></span>
+        </div>
+    </div>
+
+    <div class="grid-container" #listItem>
+        <div class="grid-item-head">
+          <img class="logo-img" src="../../../../assets/logo/main-logo.png" alt="logo" width="90px">
+          <span (click)="menuCloseAction()"><i class="ri-close-fill"></i></span>
+        </div>
+        <div class="grid-item home">
+          <span routerLink="" (click)="menuCloseAction()">Home</span>
+        </div>
+        <div class="grid-item about">
+            <span routerLink="about" (click)="menuCloseAction()">About</span>
+            <ul class="menu">
+                <li>
+                    <a href="" (click)="menuCloseAction()" [routerLink]="['/about']" fragment="sec1" class="menu-link" target="">
+                      ABOUT CIM 2025
+                    </a>
+                </li>
+                <li>
+                    <a href="" (click)="menuCloseAction()" [routerLink]="['/about']" fragment="sec2" class="menu-link" target="">
+                        About CAN
+                    </a>
+                </li>
+                <li>
+                  <a href="" (click)="menuCloseAction()" [routerLink]="['/about']" fragment="sec6" class="menu-link" target="">
+                    Honorary Commitee
+                  </a>
+              </li>
+                <li>
+                    <a href="" (click)="menuCloseAction()" [routerLink]="['/about']" fragment="sec3" class="menu-link" target="">
+                      National Organizing Committee
+                    </a>
+                </li>
+                <li>
+                    <a href="" (click)="menuCloseAction()" [routerLink]="['/about']" fragment="sec5" class="menu-link" target="">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <span (click)="menuCloseAction()" routerLink="program">Program</span>
+            <ul class="menu">
+                <li>
+                  <a href="" (click)="menuCloseAction()" [routerLink]="['/program']" fragment="sec1" class="menu-link" target="">
+                    CAN 2025 Program
+                  </a>
+                </li>
+                <li>
+                  <a href="" (click)="menuCloseAction()" [routerLink]="['/program']" fragment="sec2" class="menu-link" target="">
+                    CAN Matchs
+                  </a>
+              </ul>
+        </div>
+        <div class="grid-item">
+            <span (click)="menuCloseAction()" routerLink="registration">Reserve a ticket</span>
+            <ul class="menu">
+              <li>
+                <a href="" (click)="menuCloseAction()" [routerLink]="['/registration']" fragment="sec1" class="menu-link" target="">
+                    guideline
+                </a>
+              </li>
+      
+              <li>
+                <a href="" (click)="menuCloseAction()" [routerLink]="['/registration']" fragment="sec2" class="menu-link" target="">
+                  Payement
+                </a>
+              </li>
+      
+              <li>
+                <a href="" (click)="menuCloseAction()" [routerLink]="['/registration']" fragment="sec3" class="menu-link" target="">
+                  Reservation procedure
+                </a>
+              </li>
+      
+              <li>
+                <a href="" [routerLink]="['/registration']" fragment="sec4" class="menu-link" target="">
+                  Cancellation
+                </a>
+              </li>
+      
+              <li>
+                <a href="" (click)="menuCloseAction()" [routerLink]="['/registration']" fragment="sec6" class="menu-link" target="">
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="grid-item grid-item-logo"><img class="logo-img" src="../../../../assets/logo/main-logo.png" alt="logo"></div>
+        <div class="grid-item">
+            <span (click)="menuCloseAction()" routerLink="travel&tours">Venue, Travel & Tours</span>
+            <ul class="menu">
+              <li>
+                <a href="" (click)="menuCloseAction()" [routerLink]="['/travel&tours']" fragment="sec1" class="menu-link" target="">
+                  venue
+                </a>
+              </li>
+              <li>
+                <a href="" (click)="menuCloseAction()" [routerLink]="['/travel&tours']" fragment="sec5" class="menu-link" target="">
+                  transportation & accommodation
+                </a>
+              </li>
+              <li>
+                <a href="" (click)="menuCloseAction()" [routerLink]="['/travel&tours']" fragment="sec8" class="menu-link" target="">
+                  visa & travel documents
+                </a>
+              </li>
+              <li>
+                <a href="" (click)="menuCloseAction()" [routerLink]="['/travel&tours']" fragment="sec9" class="menu-link" target="">
+                  getting round rabat
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <span (click)="menuCloseAction()" routerLink="sponsors">Sponsors and Exhibitors</span>
+                    <ul class="menu">
+              <li>
+                <a href="" (click)="menuCloseAction()" [routerLink]="['/sponsors']" fragment="sec1" class="menu-link" target="">
+                  organizers
+                </a>
+              </li>
+              <li>
+                <a href="" (click)="menuCloseAction()" [routerLink]="['/sponsors']" fragment="sec2" class="menu-link" target="">
+                  academic co-organizers
+                </a>
+              </li>
+              <li>
+                <a href="" (click)="menuCloseAction()" [routerLink]="['/sponsors']" fragment="sec3" class="menu-link" target="">
+                   industrial sponsors 
+                </a>
+              </li>
+              <li>
+                <a href="" (click)="menuCloseAction()" [routerLink]="['/sponsors']" fragment="sec4" class="menu-link" target="">
+                   institutionnal  sponsors
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <span (click)="menuCloseAction()" routerLink="practical_information">Practical Information</span>
+        </div>
+        <div class="grid-item">
+          <span (click)="menuCloseAction()" routerLink="FAQ">FAQ</span>
+      </div>
+    </div>    
+</div>

@@ -1,0 +1,71 @@
+li{
+    list-style-type: square;
+    padding: 0 ;
+  }
+  ul{
+    margin-left: 40PX;
+  
+  }
+  
+  a{
+    color: rgb(26, 84, 192);
+  }
+  table {
+    border-collapse: collapse;
+  }
+  
+  td{
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    padding: 8px;
+  }
+  h1{
+    padding-bottom:22px;
+    font-family: var(--f-bold-1);
+    color: var(--clr-pri-drk);
+    text-transform: uppercase;
+  }
+  h2{
+    padding-top:22px;
+    padding-bottom: 10px;
+    color: var(--clr-pri-5);
+  }
+  p{
+    line-height: 30px;
+    margin-bottom: 12px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid rgb(207, 209, 212);
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f8f8f8; /* Set background color for even rows */
+  }
+  
+  table tr:nth-child(odd) {
+    background-color: #ebebeb; /* Set background color for odd rows */
+  }
+  table tr:hover {
+    background-color: #f1f1f1;
+   
+  }
+  
+  table td:first-child,
+  table th:first-child {
+    border-left: none;
+  }
+  
+  table td:last-child,
+  table th:last-child {
+    border-right: none;
+  }
+  

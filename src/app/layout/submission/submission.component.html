@@ -1,0 +1,280 @@
+<app-scaffold [title]="'Submission of papers'" [breadCrumbLinkNames]="breadCrumbLinkNames" [sectionsInfo]="sectinInfos"
+  [headerBackgroundImage]="'../../assets/head/submition.jpg'">
+  <div id="sec1">
+    <h2>Importants Dates</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th> deadline</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let submission of submissions">
+          <td>{{ submission.type }}</td>
+          <td>{{ submission.initialSubmissionDeadline }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
+  <div id="sec2">
+    <h2>Call for Contributions</h2>
+
+    <p>
+      The organizers want to promote CPES 2024 as a forum where scientists and
+      engineers from several research communities can meet to discuss issues
+      related to the scope of the symposium. The scientific program will contain
+      plenary lectures, regular sessions, invited sessions. Prospective authors
+      and organizers of invited sessions are invited to submit contributions
+      <span class="link"><a href="http://ifac.papercept.net/conferences/scripts/start.pl"
+          target="_blank">here</a></span>
+      using the templates which can be found
+      <span class="link"><a href="https://www.ifac-control.org/conferences/author-guide" target="_blank">here</a>.</span>
+      The contributions will be subject to review and assessment by the
+      International Program Committee, before inclusion in the conference
+      program.
+    </p>
+  </div>
+
+  <div id="sec3">
+    <h2>Types of Contributions</h2>
+
+    <div class="container-sub-item">
+      <h4>Contributed regular papers</h4>
+      <p>
+        Regular papers must present original, unpublished work which falls into
+        the scope of the workshop and must not be currently under consideration
+        for publication elsewhere. Manuscripts are limited to six double-column
+        pages.
+      </p>
+    </div>
+
+    <div class="container-sub-item">
+      <h4>Contributed tutorial papers</h4>
+      <p>
+        In contrast to a regular paper, a tutorial paper goes beyond the
+        presentation of an original work. It also provides an introduction to a
+        topic or particular technique; eventually with some comprehensive review
+        of the area it covers.
+      </p>
+    </div>
+
+    <div class="container-sub-item">
+      <h4>Open invited Tracks Proposals</h4>
+      <p>
+        The International Program Committee encourages the submission of open
+        invited tracks. The topics should fall within the scope of the symposium
+        and should be sufficiently focused (and not too broad). Contributions to
+        open invited tracks are Regular papers and Tutorial papers.
+      </p>
+      <p>
+        Open invited tracks have no upper limit on the number of papers but only
+        tracks having gathered more than five papers will be included in the
+        program as open invited track sessions.
+      </p>
+      <p>
+        For open invited tracks, everyone is welcome to submit even if not
+        personally invited by the organizers. You can submit contributions to
+        any of the tracks. The list of proposed open invited track topics will
+        be uploaded to this web page after we receive proposals. If you feel
+        that your contribution fits the topic of a track, select 'open invited
+        track paper' as submission type and use the code (to be shown in the
+        list) of the track you choose at the second step of submission.
+      </p>
+      <p>
+        Organizers of open invited track should write and submit a four-page
+        proposal and include
+      </p>
+      <ul>
+        <li>The name and full contact details of the Open Track organizers.</li>
+        <li>The title of the Open Track</li>
+        <li>
+          A description of the Open Track theme and an argument supporting its
+          significance.
+        </li>
+      </ul>
+      <p>
+        The CPES 2024 website will advertise the submitted open invited tracks.
+        Organizers are asked to submit proposals as early as possible and no
+        later than January 15th 2024. Up on submission of the proposal, the
+        organizers will obtain an open invited track code. This code will also
+        be displayed on the symposium web site. Contributors are asked to enter
+        this invited track code when submitting their papers.
+      </p>
+
+      <!-- <span class="link center"><a href="https://www.ifac2023.org/submission/open-invited-track-list/">See the list of
+          submitted open invited tracks and invited sessions
+        </a></span> -->
+    </div>
+  </div>
+
+  <div id="sec4">
+    <h2>Submit a Contribution</h2>
+
+    <p>
+      All papers and proposals must be submitted electronically using the IFAC
+      PaperPlaza conference manuscript management system:
+    </p>
+    <span class="link center">
+      <a href="http://ifac.papercept.net/conferences/scripts/start.pl ">http://ifac.papercept.net/conferences/scripts/start.pl
+      </a>
+    </span>
+    <p>
+      At this web page, scroll down to the banner of CPES 2024 and select
+      <span class="bold">'Submit a contribution to CPES 2024'</span>.
+    </p>
+    <p>
+      Guidelines for the preparation of manuscripts (Regular and Invited Papers)
+      are provided on the IFAC website
+      <span class="link"><a
+          href="https://www.ifac-control.org/conferences/author-guide">https://www.ifac-control.org/conferences/author-guide</a></span>For
+      copyright issues, please check IFAC Copyright conditions.
+      <span class="link"><a
+          href="https://www.ifac-control.org/publications/copyright-conditions">https://www.ifac-control.org/publications/copyright-conditions</a></span>
+    </p>
+    <p>
+      The table summarizes the main characteristics of each submission type.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Type of submission</th>
+          <!-- <th>Page limits for initial submission</th> -->
+          <th>Page limits for final submission</th>
+          <th>Publication</th>
+          <th>Initial submission deadline</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let submission of submissions">
+          <td>{{ submission.type }}</td>
+          <!-- <td>{{ submission.initialPageLimits }}</td> -->
+          <td>{{ submission.finalPageLimits }}</td>
+          <td>{{ submission.publication }}</td>
+          <td>{{ submission.initialSubmissionDeadline }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      * With extra page charge, the final version may be up to 8 pages for
+      regular papers and 14 pages for Tutorial papers
+    </p>
+  </div>
+
+  <div id="sec5">
+    <h2>Submit a Final Manuscript</h2>
+
+    <h3>Prepare Final Manuscript</h3>
+    <p>
+      The final manuscript of your paper should account for all the critical
+      reviewers' feedback. Please notice that the contributor uploads his/her
+      contribution that should fulfill the format constraints
+      <span class="link"><a href="https://ifac.papercept.net/conferences/support/support.php">(use the IFAC paper format
+          here)</a></span>. All submissions must be written in English and prepared in the IFAC
+      format. See
+      <span class="link"><a href="https://ifac.papercept.net/conferences/support/support.php">the support
+          page</a></span>
+      where tools are provided for managing formatting issues.
+    </p>
+
+    <h2>Registration to the Congress</h2>
+    <p>
+      Papers are accepted based on the understanding that at least one of the
+      authors registers to the Symposium and is present at the Symposium on
+      site. In order to submit the final version, you complete registration
+      first as a full or a student registrant after specifying which paper(s)
+      you cover under your registration. If your paper exceeds the nominal page
+      count, 6 pages for regular papers and 12 pages for survey papers, by
+      maximum 2 pages, you must first complete the final submission information
+      on the paper submission page of your author interface. Then the excess
+      page count will appear in the SELECT PAPERS page in the registration
+      process. <br>
+      
+    <span class="link center pri"><a href="https://www.ifac2023.org/registration/">Details about the
+      Registration</a></span>
+    </p>
+
+
+    <h2>Upload Paper</h2>
+    <p>
+      After making the registration for the Symposium, please upload your final
+      manuscript from the IFAC PaperPlaza conference manuscript management
+      system. <br>
+      <span class="link center pri">
+        <a href="https://ifac.papercept.net/conferences/scripts/start.pl">Upload the Final Manuscript
+        </a>
+      </span>
+    </p>
+
+
+  </div>
+
+  <div id="sec6">
+    <h2>Copyright conditions</h2>
+
+    <span class="link"><a
+        href="https://www.ifac-control.org/publications/copyright-conditions">(https://www.ifac-control.org/publications/copyright-conditions)</a></span>
+
+    <p>
+      All publication material submitted for presentation at an IFAC-sponsored
+      meeting (Congress, Symposium, Conference, Workshop) must be original and
+      hence cannot be already published, nor can it be under review elsewhere.
+      The authors take responsibility for the material that has been submitted.
+      IFAC-sponsored conferences will abide by the highest standard of ethical
+      behavior in the review process as explained on the Elsevier webpage
+      <span class="link"><a
+          href="https://www.elsevier.com/authors/journal-authors/policies-and-ethics">(https://www.elsevier.com/authors/journal-authors/policies-and-ethics)</a></span>
+      and the authors will abide by the IFAC publication ethics guidelines
+      <span class="link"><a
+          href="https://www.ifac-control.org/events/organizers-guide/PublicationEthicsGuidelines.pdf/view.">(https://www.ifac-control.org/events/organizers-guide/PublicationEthicsGuidelines.pdf/view).</a></span>
+      Accepted papers that have been presented at an IFAC meeting will be
+      published in the proceedings of the event using the open-access
+      IFAC-PapersOnLine series hosted on
+      <span class="link"><a href="https://sciencedirect.com/">(https://sciencedirect.com/)</a></span>
+      To this end, the author(s) must grant exclusive publishing rights to IFAC
+      under a Creative Commons license when they submit the final version of the
+      paper. The copyright belongs to the authors, who have the right to share
+      the paper in the same terms allowed by the end user license, and retain
+      all patent, trademark and other intellectual property rights (including
+      research data).
+    </p>
+  </div>
+
+  <div id="sec7">
+    <h2>IFAC CPES Young Author Award</h2>
+
+    <p>
+      The prize is for the best paper at the IFAC CPES 2024 of an author younger
+      than 30 years by July 1st, 2024. The author should be the first and should
+      also present the results during the Symposium. The prize and a certificate
+      are awarded at the closing ceremony of the IFAC Symposium.
+    </p>
+
+    <p>
+      Nominations may be made by the supervisor or colleagues of the young
+      author (no self-nominations) and should include
+      <span class="link"><a
+          href="https://www.ifac-control.org/conferences/ifac-young-author-event-award-1/young-author-event-award-nomination-form-1/view">a
+          nomination form</a></span>. The nomination form must contain a clear statement indicating that the
+      nominee is younger than 30 years by July 1st, 2024. The nomination form
+      should be submitted using the IFAC PaperPlaza conference manuscript
+      management system. For the age criterion motivated exemptions can be taken
+      into account under certain specific circumstances. Papers authored by
+      members of the Selection Committee or the Awards Chair are not eligible.
+    </p>
+
+    <p>
+      The nomination phase will start on April 10th, 2024 and close on
+      <span class="bold">June 10th, 2023</span>. The IFAC Young Author Prize
+      Selection Committee determines based on the gathered reviews and on their
+      own reading of the paper a short list of finalists, and notifies authors.
+      The winner is determined at the time of the Symposium, based on both the
+      written paper and the oral presentation that should be given by the
+      nominee.
+    </p>
+  </div>
+</app-scaffold>

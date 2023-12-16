@@ -1,0 +1,38 @@
+.head{
+    display: block;
+    position: relative;
+    margin: 32px 89px;
+    font-family: var(--f-bold);
+    /* color: var(--clr-ter-3); */
+    color: var(--clr-pri-drk);
+    text-transform: uppercase;
+}
+
+.head::before{
+    font-size: 0px;
+    width: 2px;
+    height: 2px;
+
+}
+
+.football{
+    width: 25px;
+    position: absolute;
+    left: 60px;
+}
+
+
+@media screen and (max-width:500px){
+  
+    .head{
+        margin: 24px 54px;
+    }
+
+    .head::before{
+        width: 45px;
+        top: -14px;
+        left: -36px;
+    }
+  
+}
+  

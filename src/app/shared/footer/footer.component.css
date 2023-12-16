@@ -1,0 +1,123 @@
+.footer {
+    background-color: #f0f0f0;
+    padding: 36px 0;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start; /* Align links on the left */
+    gap: 36px;
+    margin-left: 25px;
+  }
+  
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items on the left */
+    margin-bottom: 24px;
+  }
+  
+  
+  .item-element {
+    color: #306588;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    margin: 8px 0;
+  }
+  
+  .head-item {
+    color: #0a74b9;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 8px 0;
+  }
+
+  a{
+    transition: .3s ease-in-out;
+  }
+  
+a:hover{
+  color: var(--clr-pri-drk);
+  font-size: 15.4px;
+}
+
+  
+  .sub-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 26px 36px;
+  }
+  
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  
+  .social {
+    border-radius: 50%;
+    background-color: #0a74b9;
+    color: #f0f0f0;
+    border: 2px solid transparent;
+    padding: 8px;
+    margin-right: 16px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .social:hover {
+    color: #0a74b9;
+    background-color: #f0f0f0;
+    border: 2px solid #0a74b9;
+    border-radius: 30%;
+  }
+  
+  .social i {
+    font-size: 18px;
+  }
+  
+  .social i:hover {
+    background-color: #5187a6;
+  }
+  
+  .copyright {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-right: 10px;
+  }
+  
+
+  @media screen and (max-width:500px){
+  
+    .footer-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 12px;
+    }
+
+    .footer-item {
+      margin-bottom: 0px; 
+    }
+
+    .sub-footer {
+      flex-direction: column;
+      padding-inline: 18px 0px;
+      margin: 16px 0;
+    }
+
+
+    .footer {
+      padding: 0;
+    }
+    
+  
+}
+  

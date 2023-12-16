@@ -1,0 +1,38 @@
+<div class="scaffold">
+    <div class="title-slot" [ngStyle]="{'background-image': 'url('+ headerBackgroundImage +')'}">
+      <h1>{{ title }}</h1>
+    </div>
+  
+    <div class="breadcrumb">
+      <ul>
+        <li *ngFor="let link of breadCrumbLinkNames"><a [routerLink]="'/'+(link=='home' ? '' : link)" class="back">{{ link }}</a></li>
+      </ul>
+    </div>
+  
+    <div class="pane">
+      <div>
+        <div class="custom-content">
+          <ng-content></ng-content>
+        </div>
+  
+        <nav class="section-nav">
+          <div>
+            <header>
+              <h3>{{ title }}</h3>
+            </header>
+            <ul>
+              <li
+                *ngFor="let secInfo of sectionsInfo"
+                attr.data-section-id="{{ secInfo.id }}"
+              >
+                <a [href]="secInfo.id">
+                  {{ secInfo.title }}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  

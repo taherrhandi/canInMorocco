@@ -1,0 +1,36 @@
+<div class="imp-dates-cont" id="date">
+  <div class="app-header">
+    <app-header class="head-impotant" title="Important Dates" />
+  </div>
+  <div class="flex-cont">
+    <div class="flex">
+      <div class="teletubby" *ngFor="let data of cardData">
+        <div class="antenae"></div>
+        <div class="card">
+          <p>{{ data.info }}</p>
+          <hr />
+          <div class="date-area">
+            <p>{{ data.monthDay }}</p>
+            <p>{{ data.year }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider-ctrl">
+    <div class="ctrl" (click)="onSliderCtrlClicked(-1)">
+      <p><i class="ri-arrow-drop-left-line icon"></i></p>
+    </div>
+    <div class="circ-cont">
+      <div
+        class="circle"
+        [class.current]="currentItemIdx === idx"
+        (click)="onSliderCircleClicked(idx)"
+        *ngFor="let _ of cardData; index as idx"
+      ></div>
+    </div>
+    <div class="ctrl" (click)="onSliderCtrlClicked(+1)">
+      <p><i class="ri-arrow-drop-right-line icon"></i></p>
+    </div>
+  </div>
+</div>

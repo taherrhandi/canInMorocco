@@ -1,0 +1,103 @@
+app-scaffold{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  
+  }
+  
+  section {
+      height: 100%;
+      width: 88vw;
+      border-radius: 8px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Align items at the top */
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #888888 #dddddd;
+      /* box-shadow: 2px 2px 5px black; */
+    }
+    h1{
+      padding-bottom:32px;
+      font-family: var(--f-bold-1);
+      color: var(--clr-pri-drk);
+      text-transform: uppercase;
+    }
+    p{
+      line-height: 30px;
+      margin-bottom: 12px;
+    }
+    .container {
+      width: 100%;
+      overflow-y: auto;
+    }
+    
+    .accordion-item {
+      background-color: whitesmoke;
+      border-radius: .4rem;
+      /* margin-bottom: .2rem; */
+      padding: 1rem;
+    }
+    
+    .accordion-link {
+      font-size: 1.1rem;
+      color: rgba(0, 0, 0, .8);
+      text-decoration: none;
+      background-color: inherit;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .5rem 0;
+      box-sizing: border-box;
+    }
+    .remove {
+      display: none;
+    }
+    
+    .answer {
+      color: rgba(0,0,0, .8);
+      max-height: 0;
+      overflow: hidden;
+      position: relative;
+      background-color: whitesmoke;
+      transition: max-height 700ms;
+      padding-bottom: 1px;
+    }
+    
+    .answer > p {
+      font-size: 1rem;
+      color: rgba(0,0,0, .8);
+      padding: 1rem;
+      border-radius: 4px;
+      box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 1);
+      margin: 0;
+    }
+    
+    .active {
+      color: rgba(0,0,0, .8);
+      max-height: 100vh;
+    }
+    .fa-plus:before {
+      content: "\f067"; 
+    }
+    
+    .fa-minus:before {
+      content: "\f068"; 
+    }
+    .icon {
+      font-size: 15px;
+      color: rgb(92, 87, 87); 
+      padding-left: 32px;
+  
+    }
+    .even-item {
+      background-color: #F0F0F0; /* Set your desired even item background color */
+    }
+    
+    .odd-item {
+      background-color: #E0E0E0; /* Set your desired odd item background color */
+    }
+    

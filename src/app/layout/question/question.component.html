@@ -1,0 +1,21 @@
+<app-scaffold [sectionsInfo]="secIds" [breadCrumbLinkNames]="breadCrumbLinkNames" [title]="'Frequentlty Asked Questions'" [headerBackgroundImage]="'../../assets/head/faq.jpg'">
+    <div id="sec1">
+      <h1>{{secIds[0].title}}</h1>
+      <section>
+        <div class="container">
+          <div class="accordion">
+            <div class="accordion-item" *ngFor="let item of accordionItems; let i = index" >
+              <a class="accordion-link" (click)="toggleAnswer(item)">
+                {{ item.question }}
+                <i class="icon fas" [ngClass]="{'fa-plus': !item.showAnswer, 'fa-minus': item.showAnswer}"></i>
+              </a>
+              <div class="answer" [class.active]="item.showAnswer">
+                <p>{{ item.answer }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </app-scaffold>
+  

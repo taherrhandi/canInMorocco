@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    position: sticky;
+    top: -45px;
+    z-index: 10;
+}
+
+.main{
+    min-height: 80vh;
+}
+
+@media screen and (max-width:500px){
+    .head{
+        top: -1px;
+    }  
+}
+  

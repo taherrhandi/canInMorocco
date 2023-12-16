@@ -1,0 +1,19 @@
+li{
+    list-style-type: square;
+    padding-bottom: 5px;
+  }
+  
+  h1{
+    padding-bottom:32px;
+    font-family: var(--f-bold-1);
+    color: var(--clr-pri-drk);
+    text-transform: uppercase;
+  }
+  p{
+    line-height: 30px;
+    margin-bottom: 12px;
+  }
+  a{
+    color: rgb(26, 84, 192);
+  }
+  
