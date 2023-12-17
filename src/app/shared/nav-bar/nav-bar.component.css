@@ -71,11 +71,11 @@
 }
 
 .grid-item>img {
-    width: 150px;
+    width: 100px;
     position:absolute;
 }
 .logo-img{
-    width: 150px;
+    width: 100px;
 }
 
 .focus-menu {

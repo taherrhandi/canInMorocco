@@ -174,127 +174,9 @@
     </p>
   </div>
 
-  <div id="sec7" class="conatainer-section">
-    <h2>Accommodation</h2>
-    <p>
-      There are various types of hotels at different ranks in Rabat. If you try
-      to book a hotel room early enough, you are likely to find low rates on
-      hotel booking websites. Therefore, the CPES2024 Organizing Committee does
-      not make an arrangement with specific hotels. Some of the are listed below
-      for your reference. In addition to these hotels, you may find many others
-      in the booking websites.
-    </p>
-    <p>
-      The following hotels are located in the heart of Rabat city, near to a
-      Tram stop or to a Taxi station to get to the ENSAM school of engineering
-      in a half an hour or so. Tram trip costs less than 1 US dollar in local
-      currency, while a trip taxi costs 2 to 3 US dollars in local currency.
-    </p>
-
-    <h3 class="bold">Some Hotels in Rabat city</h3>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Hotel</th>
-          <th>Rank</th>
-          <th>Distance to Venue</th>
-          <th>Locatoin</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>The View Hotel</td>
-          <td>*****</td>
-          <td>2.4 Km</td>
-          <td>Hay Riad, vibrant street with various restaurants and cafés</td>
-        </tr>
-        <tr>
-          <td>The White Palace Rabat</td>
-          <td>*****</td>
-          <td>2.2 Km</td>
-          <td>Hat Riad, in a quite area</td>
-        </tr>
-        <tr>
-          <td>Rabat Mariott</td>
-          <td>*****</td>
-          <td>5,4 Km</td>
-          <td>
-            Agdal district, business area with various restaurants and cafés
-          </td>
-        </tr>
-        <tr>
-          <td>Sofitel Rabat Jardin Des Roses</td>
-          <td>*****</td>
-          <td>5,5</td>
-          <td>Agdal district, in a quite green park</td>
-        </tr>
-        <tr>
-          <td>La Tour Hassan Palace</td>
-          <td>*****</td>
-          <td>8.8 Km</td>
-          <td>Rabat city center</td>
-        </tr>
-        <tr>
-          <td>Farah Rabat</td>
-          <td>*****</td>
-          <td>8.6 Km</td>
-          <td>Rabat city center</td>
-        </tr>
-        <tr>
-          <td>Belere Hotel Rabat</td>
-          <td>****</td>
-          <td>6.7 Km</td>
-          <td>Rabat city center</td>
-        </tr>
-        <tr>
-          <td>Helnan Chellah Rabat Hotel</td>
-          <td>****</td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h3 class="bold">Some Hotels in Surrounding Beaches and Marinas</h3>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Hotel</th>
-          <th>Rank</th>
-          <th>Distance to Venue</th>
-          <th>Location</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Fairmont La Marina Rabat Sale Hotel And Residences</td>
-          <td>*****</td>
-          <td>11.5 Km</td>
-          <td>Marina of Rabat-Salé</td>
-        </tr>
-        <tr>
-          <td>Dawliz Rabat Art & Spa</td>
-          <td>*****</td>
-          <td>5,4 Km</td>
-          <td>Bouregreg River bank</td>
-        </tr>
-        <tr>
-          <td>Hilton Conrad Rabat Arzana</td>
-          <td>*****</td>
-          <td>15 Km</td>
-          <td>Harhora Beach</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
 <div class="maps">
     <div class="inputs">
-      <select name="cities" id="">
+      <select name="cities" id="cities">
         <option value="Rabat" selected>rabat</option>
         <option value="Casablanca">Casablanca</option>
         <option value="Tanger">Tanger</option>
@@ -302,13 +184,17 @@
         <option value="Fez">Fez</option>
         <option value="Agadir">Agadir</option>
       </select>
-      <select name="types" id="">
-        <option value="Hotels" selected>Hotels</option>
+      <select name="types" id="type">
+        <option value="Hotels" >Capsule</option>
         <option value="Restaurants">Restaurants</option>
         <option value="Cafe">Cafe</option>
         <option value="car rental">car rental</option>
         <option value="pharmacy">Pharmacy</option>
       </select>
+      <input type="date" placeholder="date">
+      <input type="time">
+      <!-- <input type="number" placeholder="number of rooms"> -->
+      <button id="reserve" [routerLink]="['/reservation']">reserve</button>
     </div>
     <img src="../../../assets/travel_tours/hotels_rabat.jpg" alt="maps">
 </div>

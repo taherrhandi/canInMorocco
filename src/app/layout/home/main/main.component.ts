@@ -13,7 +13,7 @@ export class MainComponent implements AfterViewInit{
 
   url = environment.baseUrl+"#date"
 
-  images = ['1.avif','back2.jpeg']
+  images = ['vrait_size.png','1.avif','casablanca.png','FES.png','MARRAKECH.png']
 
   ngAfterViewInit(): void {
     interval(5000)

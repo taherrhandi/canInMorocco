@@ -20,6 +20,9 @@ import { ImportantDatesComponent } from './layout/home/important-dates/important
 import { AboutIfacComponent } from './layout/home/about-ifac/about-ifac.component';
 import { AboutRabatComponent } from './layout/home/about-rabat/about-rabat.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { ReservationComponent } from './layout/reservation/reservation.component';
+import { TransportComponent } from './layout/transport/transport.component';
+import { FormsModule } from '@angular/forms'; // Import the FormsModule
 
 @NgModule({
   declarations: [
@@ -40,11 +43,14 @@ import { HeaderComponent } from './shared/header/header.component';
     ImportantDatesComponent,
     AboutIfacComponent,
     AboutRabatComponent,
-    HeaderComponent
+    HeaderComponent,
+    ReservationComponent,
+    TransportComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

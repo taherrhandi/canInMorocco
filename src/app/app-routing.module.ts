@@ -9,6 +9,8 @@ import { SponsorsComponent } from './layout/sponsors/sponsors.component';
 import { AboutComponent } from './layout/about/about.component';
 import { TravelToursComponent } from './layout/travel-tours/travel-tours.component';
 import { QuestionComponent } from './layout/question/question.component';
+import { ReservationComponent } from './layout/reservation/reservation.component';
+import { TransportComponent } from './layout/transport/transport.component';
 
 const routes: Routes = [
   {path: '', component:HomeComponent},
@@ -19,7 +21,9 @@ const routes: Routes = [
   { path: 'sponsors', component: SponsorsComponent },
   { path: 'travel&tours', component: TravelToursComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'FAQ', component: QuestionComponent }
+  { path: 'FAQ', component: QuestionComponent },
+  { path: 'reservation', component: ReservationComponent },
+  { path: 'transport', component: TransportComponent }
 ];
 
 

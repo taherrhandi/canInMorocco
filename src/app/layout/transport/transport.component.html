@@ -1,0 +1,93 @@
+
+<app-scaffold [sectionsInfo]="secIds" [breadCrumbLinkNames]="breadCrumbLinkNames" [title]="'Transport My Baggage'" [headerBackgroundImage]="'/assets/img/home/program2.jpg'">
+  
+    <div id="sec1" class="sec1">
+      <h1>{{secIds[0].title}}</h1>
+
+      <div class="form-container">
+        <form action="">
+          <div class="input-container">
+            <label for="">email</label
+            ><input type="email" placeholder="enter your email" />
+          </div>
+          <div class="input-container">
+            <label for="">Reservation refference</label><input type="text" />
+          </div>
+          <div class="input-container">
+            <label for="">From </label>
+            <select name="cities" id="cities">
+              <option value="Rabat" selected>rabat</option>
+              <option value="Casablanca">Casablanca</option>
+              <option value="Tanger">Tanger</option>
+              <option value="Marakech">Marakech</option>
+              <option value="Fez">Fez</option>
+              <option value="Agadir">Agadir</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <label for="">To </label>
+            <select name="cities" id="cities">
+              <option value="Rabat" >rabat</option>
+              <option value="Casablanca" selected>Casablanca</option>
+              <option value="Tanger">Tanger</option>
+              <option value="Marakech">Marakech</option>
+              <option value="Fez">Fez</option>
+              <option value="Agadir">Agadir</option>
+            </select>
+          </div>
+          
+          <div class="input-container">
+            <label for="">Date</label><input type="date" value="1" />
+          </div>
+          <div class="input-container">
+            <label for="">Time</label><input type="time" value="1" />
+          </div>
+          <div class="input-container">
+            <label for="">price</label><input type="text" value="200 dh" />
+          </div>
+      
+          <div class="button-container"><button>Send</button></div>
+        </form>
+      </div>
+  
+    </div>
+  
+    <div id="sec2">
+        <h1>{{secIds[1].title}}</h1>
+
+        <div class="maps">
+            <div class="inputs">
+              <input type="text" placeholder="reference" class="reference" [(ngModel)]="reference">
+              <a id="track" class="track" (click)="trackBaggage()">track</a>
+            </div>
+            <img *ngIf="showMap" src="../../../assets/travel_tours/hotels_rabat.jpg" alt="maps">
+        </div>
+
+    </div>
+    
+    </app-scaffold>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
